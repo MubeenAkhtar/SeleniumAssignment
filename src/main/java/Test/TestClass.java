@@ -16,11 +16,6 @@ public class TestClass {
         WebDriverManager.chromedriver().browserVersion("96").setup();
         WebDriver driver = new ChromeDriver();
         driver.get("http://sanbox.undostres.com.mx/"); // Opening the URL
-        // Trend micro securities
-        driver.findElement(By.id("username")).sendKeys("muakhtar@nisum.com");
-        driver.findElement(By.id("login")).click();
-        driver.findElement(By.id("password")).sendKeys("Mobiqwerty003#");
-        driver.findElement(By.id("login")).click();
         //now Selecting operator and fill Recharge Details
         driver.findElement(By.name("operator")).click();  //Providing the input in the Operador
         driver.findElement(By.cssSelector("[click='1']")).click();
